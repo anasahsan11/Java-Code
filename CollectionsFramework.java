@@ -1,27 +1,25 @@
-// import java.util.ArrayList;
-// import java.util.Iterator;
+ import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Stack;
+import java.util.LinkedList;
+import java.util.Queue;
 
-//import java.util.Stack;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
-// import java.util.LinkedList;
-// import java.util.Queue;
+import java.util.ArrayDeque;
 
-// import java.util.PriorityQueue;
-// import java.util.Queue;
-
-// import java.util.ArrayDeque;
-
-// import java.util.HashSet;
-// import java.util.LinkedHashSet;
-// import java.util.Set;
-// import java.util.TreeSet;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CollectionsFramework {
     public static void main(String[] args) {
-        /* 
+        
         ArrayList<Integer> arr=new ArrayList<>();
         arr.add(10); //to add an element in an array
         arr.add(20);
@@ -38,7 +36,7 @@ public class CollectionsFramework {
         System.out.println(arr.contains(60)); //to check whether it contains given elem or not returns boolean value
 
 
-        //ways to traverse array
+        //traverse array
         for(int i=0;i<arr.size();i++){    
             System.out.print(arr.get(i)+" ");
         }
@@ -52,7 +50,7 @@ public class CollectionsFramework {
         while(it.hasNext()){
             System.out.print(it.next()+" ");
         }
-]
+
     
 
         //stack-LIFO
@@ -124,20 +122,20 @@ public class CollectionsFramework {
         System.out.println(set.contains(3));
         System.out.println(set.size());
         System.out.println(set.isEmpty());
-*/
-        HashMap<String,Integer>map=new HashMap<>();
+
+        HashMap<String,Integer>map=new HashMap<>(); //unsorted //TreeMap-sorted on the basis of key
         map.put("one", 1);
         map.put("two", 2);
         map.put("three", 3);
 
         for(Map.Entry<String,Integer>e:map.entrySet()){
-            //System.out.println(e);
-            //System.out.println(e.getKey());
-            //System.out.println(e.getValue());   
+            System.out.println(e);
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());   
         }
 
         for(String key:map.keySet()){
-            //System.out.println(key);
+            System.out.println(key);
         }
 
         for(Integer val:map.values()){
