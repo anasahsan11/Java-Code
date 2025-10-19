@@ -7,7 +7,7 @@ public class CharacterHashing2 {
         Scanner sc=new Scanner(System.in);
         String s="Anas Ahsan";
         int []hash=new int[256];
-        //prestoring
+        //prestoringsdf
         for(int i=0;i<s.length();i++){
             hash[s.charAt(i)]++;
         }
