@@ -1,7 +1,5 @@
 package Day7;
-
 import java.util.ArrayList;
-
 public class MergeSort {
     public static void merge(int []arr,int low,int mid,int high){
         int left=low,right=mid+1;
@@ -16,7 +14,6 @@ public class MergeSort {
                 right++;
             }
         }
-
         while(left<=mid){
             temp.add(arr[left]);
             left++;
@@ -25,7 +22,6 @@ public class MergeSort {
             temp.add(arr[right]);
             right++;
         }
-
         for(int i=low;i<=high;i++){
             arr[i]=temp.get(i-low);
         }
