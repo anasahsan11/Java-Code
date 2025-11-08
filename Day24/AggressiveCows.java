@@ -4,10 +4,10 @@ import java.util.Arrays;
 public class AggressiveCows {
     public static boolean canWePlace(int []stalls,int dist,int k){
         int cowsCnt=1,lastCow=stalls[0];
-        for(int x:stalls){
-            if(x-lastCow>=dist){
+        for(int i=1;i<stalls.length;i++){
+            if(stalls[i]-lastCow>=dist){
                 cowsCnt++;
-                lastCow=x;
+                lastCow=stalls[i];
             }
         }
         return cowsCnt>=k?true:false;
